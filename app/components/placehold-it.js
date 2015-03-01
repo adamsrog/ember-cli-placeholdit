@@ -5,9 +5,15 @@ export default Ember.Component.extend({
 	width: 100,
 	text: undefined,
 
-	src: Ember.computed('height', 'width', function() {
+	backgroundColor: 'aaa',
+	textColor: '666',
+
+	src: Ember.computed('height', 'width', 'backgroundColor', 'textColor', function() {
+		
+		// build url for placeholder image
 		var base = 'http://placehold.it/';
-		var src = base + this.get('width') + '/' + this.get('height');
+		var src = base + this.get('width') + 'x' + this.get('height') + '/';
+		src += this.get('backgroundColor') + '/' + this.get('textColor');
 		
 		// check for custom placeholder text
 		if (this.get('text')) {
