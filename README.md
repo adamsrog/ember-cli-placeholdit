@@ -10,6 +10,9 @@ Has some parameters that can be specified:
 * text
 * format
 
+## Installation
+`ember install:addon ember-cli-placeholdit`
+
 ## Examples
 * `{{placehold-it}}`  (creates a 150x150)
 * `{{placehold-it width=350 height=350 textColor='111111' backgroundColor='5A5A5A'}}`
