@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-placeholdit",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Simple addon for inserting placehold.it images.",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -35,7 +35,10 @@
     "glob": "^4.0.5"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "placeholder",
+    "placehold.it",
+    "placeholdit"
   ],
   "ember-addon": {
     "configPath": "tests/dummy/config"
