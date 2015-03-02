@@ -1,9 +1,20 @@
-<h2 id="title">ember-cli-placeholdit</h2>
-
-{{placehold-it}}
-{{placehold-it width=200 height=100 text="Wow, so custom!"}}
-{{placehold-it width=350 height=350 textColor="ffffff" backgroundColor="000000"}}
-{{placehold-it format="png"}}
-
-
-{{outlet}}
+<div class="container">
+	<h2>ember-cli-placeholdit</h2>
+	<p>This is an ember-cli-addon that allows you to easily use <a href="http://placehold.it" target="_blank">placehold.it</a> images. You can customize various parameters:</p>
+	<ul>
+		<li>width (defaults to 100)</li>
+		<li>height (defaults to 100)</li>
+		<li>text</li>
+		<li>textColor (defaults to 555)</li>
+		<li>backgroundColor (defaults to aaa)</li>
+		<li>image format (defaults to gif, other options are jpg, jpeg, png)</li>
+	</ul>
+	{{placehold-it}}
+	<pre>\{{placehold-it}}</pre>
+	{{placehold-it width=200 height=100 text="Wow, so custom!"}}
+	<pre>\{{placehold-it width=200 height=100 text="Wow, so custom!"}}</pre>
+	{{placehold-it width=350 height=150 textColor="ffffff" backgroundColor="000000"}}
+	<pre>\{{placehold-it width=350 height=150 textColor="ffffff" backgroundColor="000000"}}</pre>
+	{{placehold-it width=400 text="this is a png!" format="png"}}
+	<pre>\{{placehold-it width=400 text="this is a png!" format="png"}}</pre>
+</div>

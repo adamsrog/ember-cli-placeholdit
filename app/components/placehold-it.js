@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 	width: 100,
 
 	backgroundColor: 'aaa',
-	textColor: '666',
+	textColor: '555',
 
 	format: undefined, // gif, jpg, jpeg, png
 	text: undefined,
@@ -17,6 +17,7 @@ export default Ember.Component.extend({
 		var src = base + this.get('width') + 'x' + this.get('height') + '/';
 		src += this.get('backgroundColor') + '/' + this.get('textColor');
 
+		// check for image format
 		if (this.get('format')) {
 			src += '.' + this.get('format');
 		}
