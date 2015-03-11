@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-placeholdit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple addon for inserting placehold.it images.",
   "directories": {
     "doc": "doc",
